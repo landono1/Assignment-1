@@ -8,15 +8,15 @@ output:
 
 ---
 
-
 ```{r,  include = FALSE}
 
 install.packages("tidyverse")
-install.packages(pkgs="readr")
-install.packages(pkgs="knitr")
-install.packages(pkgs="bslib")
-install.packages(pkgs="dbplyr")
+install.packages("readr")
+install.packages("knitr")
+install.packages("bslib")
+
 ```
+
 
 ```{r,  include = FALSE}
 
@@ -24,7 +24,7 @@ library(tidyverse)
 library(readr)
 library(knitr)
 library(bslib)
-library(dbplyr)
+
 ```
 
 
@@ -58,7 +58,7 @@ We have data about `r nrow(gun_deaths)` individuals killed by guns. Only
 ```
 
 
-
+# Gun death by age
 ```{r youth-dist, echo = FALSE}
 #the distribution of the age variable from the youth dataset
 library (ggplot2)
@@ -68,6 +68,7 @@ youth %>%
 
 ```
 
+# Gun death by race
 ```{r, echo = FALSE}
 #the distribution of youth by race.
 
